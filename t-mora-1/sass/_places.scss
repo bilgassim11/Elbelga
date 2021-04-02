@@ -1,0 +1,49 @@
+@function get-image($img) {
+    @return '../images/#{$img}' ;
+}
+
+#places {
+    margin: 36px 0 24px;
+    padding-left: $pad-left;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba($color: #ffffff, $alpha: .7);
+    
+    
+    article {
+        display: flex;
+        text-align: center;
+        margin: 36px;
+
+        figure {
+            img {
+                width: 660px;
+                height: 360px;
+
+                &:hover {
+                    transform: scale(1.1);
+                    border-color: blue;
+
+                }
+            }
+        }
+
+        div {
+            text-align: left;
+            position: flex;
+            justify-items: start;
+            font-size: 24px;
+            
+            button {
+                background-color: rgba($color: #c74900, $alpha: .73);
+                font-size: 16px;
+                padding: 12px 18px;
+                padding-right: 240px;
+                color: black;
+            }
+        }
+    }
+
+    
+
+}

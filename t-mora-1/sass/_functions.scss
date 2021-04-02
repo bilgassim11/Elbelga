@@ -1,0 +1,3 @@
+@function get-image($img) {
+    @return '../images/#{$img}' ;
+}
